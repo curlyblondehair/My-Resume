@@ -1,128 +1,236 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background: #0d1117 ; /* Changed to a more neutral background */
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0d3b66;
+    background-color: #faf0ca;
 }
 
-.container{
-    background: #161b22;
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 20px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-    border: solid cyan;
+.container {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
-.header {
+/* Main Navbar Styling */
+.navBar {
+    list-style-type: none;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #003049;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+/* Navbar Items */
+.navBar li {
+    margin: 0 10px;
+    padding: 10px;
     text-align: center;
 }
 
-.header h1 {
-    margin-bottom: 10px;
+/* Navbar Links */
+.navBar a {
+    color: #faf0ca;
+    text-decoration: none;
+    padding: 8px 12px;
 }
 
-.header h3 {
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 500;
+/* Navbar Hover Effect */
+.navBar a:hover {
+    background-color: #fff;
+    color: #0d3b66;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 2px solid #faf0ca;
 }
 
-.image-area {
-    width: 200px;
-    height: 200px;
+/* Dark Mode Button Styling */
+#toggleDarkMode {
+    background: none;
+    border: 2px solid #faf0ca;
+    color: #faf0ca;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#toggleDarkMode:hover {
+    background-color: #faf0ca;
+    color: #0d3b66;
+}
+
+.profile {
+    background-color: #faf0ca;
+    border-radius: 5px;
+    margin-top: 70px;
+    
+    padding: 50px;
+}
+
+.header img {
+    max-width: 200px;
+    height: auto;
     border-radius: 50%;
-    overflow: hidden;
-    margin: 25px auto;
-    border: 15px groove deepskyblue;
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: 6px solid #faf0ca;
+    outline: 6px solid #0d3b66;
+    padding: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-.image-area img {
+.header h1, h2, p {
+    margin-top: 10px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 1.2px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.header p {
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+.summary h2, .contact h2, .personal h2 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    border: 2px solid #0d3b66;
+    color: #faf0ca;
+    background-color: #0d3b66;
+    padding: 7px;
     width: 100%;
 }
 
-.main { /* Corrected from .mai to .main */
-    display: flex;
-    flex-wrap: wrap;
+.contact {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.left {
-    flex: 1;
-    padding: 30px;
-}
-
-.left p {
-    line-height: 2;
-}
-
-.left ul li {
-    line-height: 2;
-}
-
-h2 {
-    background: #00b6c4;
-    padding: 15px;
-    margin: 30px 0;
-    font-size: 20px;
-    border-radius: 0 50px 50px 0;
-}
-h1,h2,h3,p, ul {
-    color: #fff;
- }
-.right {
-    flex: 1;
-    padding: 30px;
-}
-
-.right h3 {
+.contact h2 {
+    font-size: 24px;
+    color: #faf0ca;
     margin-bottom: 15px;
 }
 
-.right p {
-    line-height: 2.9;
+.contactLinks {
+    display: flex; /* Makes items align in a row */
+    justify-content: center; /* Centers the content */
+    gap: 20px; /* Adds space between items */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    padding: 10px 0;
 }
 
-.right ul li {
-    line-height: 2;
+/* ✅ Individual Links */
+.contactLinks p {
+    margin: 0;
 }
 
-.education ~ ul {
-    margin-left: 20px; /* add indentation */
-    padding-left: 0; /* remove default padding */
-  }
-  
-  .education ~ ul li {
-    list-style:disc; /* remove default bullet points */
-    margin-bottom: 10px; /* add spacing between awards */
-  }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .container {
-        width: 95%;
-        height: auto;
-    }
-    h2 {
-        font-size: 18px;
-    }
+/* ✅ Styling for Links */
+.contactLinks a {
+    text-decoration: none;
+    color: #0d3b66;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
 }
 
-@media screen and (max-width: 600px) {
-    .main {
+.contactLinks a:hover {
+    border: 2px solid #0d3b66;
+    border-radius: 10px;
+    color: #0d3b66;
+    padding: 5px;
+}
+
+.personal {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centers the entire content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures centering */
+    padding-top: -30px; /* Adjust spacing */
+}
+
+/* ✅ Personal Info Paragraphs */
+.personal p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+/* ✅ Strong (Labels) */
+.personal strong {
+    color: #0d3b66;
+    font-weight: bold;
+}
+
+/* ✅ Italicized Values */
+.personal em {
+    font-style: italic;
+    color: #0d3b66;
+}
+
+/* Responsive: Stacks items for small screens */
+@media (max-width: 768px) {
+    .navBar {
         flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
     }
-    .left, .right {
-        flex: none;
+
+    .navBar li {
         width: 100%;
+        padding: 10px 0;
     }
-    .container {
-        width: 95%;
-        height: auto;
+
+    .navBar a {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
-    h2 {
-        font-size: 15px;
+
+    .contactLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact h2 {
+        font-size: 20px;
+    }
+}
+
+/* Responsive: Stacks items for small screens */
+@media (max-width: 480px) {
+    .personal {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .personal p {
+        flex-direction: column;
+        text-align: left;
     }
 }

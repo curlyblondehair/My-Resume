@@ -3,103 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-
     <title>Resume</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="image-area">
-                <img src="imgs/photo_2024-06-09_13-32-54.jpg" alt="profile picture">
-            </div>
-            <h1>Jayvee Torres</h1>
-            <h3>Computer Engineering Graduate</h3>
-        </div>
-        <div class="main">
-            <div class="left">
-                <h2>Personal Information</h2>
-                <p><strong>Name:</strong> Jayvee Torres</p>
-                <p><strong>Age:</strong> 23 years old</p>
-                <p><strong>Email:</strong> trrsjayvee@gmail.com</p>
-                <p><strong>Phone number:</strong> 0907 464 7913</p>
-                <h2>Skills</h2>
-                <ul>
-                    <li>Teamwork</li>
-                    <li>Creativity</li>
-                    <li>Adaptability</li>
-                    <li>Communication</li>
-                    <li>Problem-Solving</li>
-                    <li>Time Management</li>
-                    <li>Willing to learn</li>
-                    <li>Programming Languages: HTML, PHP, MySQL, JavaScript, and CSS</li>
-                    <li>Git Version Control</li>
-                    <li>Microsoft Office</li>
-                    <li>Tinkercad Practitioner</li>
-                    <li>Canva Designer</li>
+        <div class="container">
+            <nav> 
+                <ul class="navBar">    
+                    <li><a href="#profileInfo">Profile</a></li>
+                    <li><a href="#educationInfo">Education</a></li>
+                    <li><a href="#skillsInfo">Skills</a></li>
+                    <li><a href="#seminar">Seminars and Bootcamps Attended</a></li>
+                    <li><a href="#workExperience">Work Experience</a></li>
+                    <li><a href="#references">References</a></li>
+                    <li><button id="toggleDarkMode">Dark Mode</button></li>
                 </ul>
-                <h2 class="education">Education</h2>
-                <h3>BS in Computer Engineering</h3>
-                <p><em>Bulacan State University, 2019-2023</em></p>
-                <ul>
-                    <li>Graduated as Dean’s Lister Awardee</li>
-                </ul>
-                <h3>General Academic Strand (Senior High)</h3>
-                <p><em>Minuyan National High School, 2017-2019</em></p>
-                <ul>
-                    <li>With Honor - Grade 11 and 12</li>
-                    <li>Best in Work Immersion - Grade 12</li>
-                    <li>Leadership Awardee</li>
-                </ul>
-                <h3>Junior High</h3>
-                <p><em>Minuyan National High School, 2013-2017</em></p>
-                <ul>
-                    <li>Consistent Honor - Grade 7 and 10</li>
-                    <li>Leadership Awardee</li>
-                </ul>
-                <h2>Reference:</h2>
-                <h3>ENGR. WENDY OLLERO-SANTOS</h3>
-                <p>Bulacan State University</p>
-                <p>0976 111 9447</p>
-                <p>wendy.ollero@bulsu.edu.ph</p>
-                <h3>ENGR. JANUARIUS CRUZ</h3>
-                <p>Bulacan State University</p>
-                <p>0926 893 8556</p>
-                <p>januarius.cruz@bulsu.edu.ph</p>
-            </div>
+            </nav>  
+            
+            
+            <section id="profileInfo">
+               <div class="profile">
+                <div class="header">
+                    <img src="/imgs/photo_2024-06-09_13-32-54.jpg" alt="profile picture">
+                    <h1>Jayvee Torres</h1>
+                    <p><em>Computer Engineering Graduate</em></p>
+                </div>
+                
+                <div class="summary">
+                    <h2>Summary</h2>
+                    <p>A highly motivated and passionate fresh graduate in Computer Engineering. Eager to
+                apply my problem-solving skills and adaptability in real-world projects, and ready to work
+                hard to help the company's business targets</p>
+                </div>   
+             
+                 <div class="contact">
+                    <h2>Contact Information</h2>
+                    <div class="contactLinks">
+                        <p><a href="mailto:trrsjayvee@gmail.com"><i class="fa-solid fa-envelope"></i> trrsjayvee@gmail.com </a></p>
+                        <p><a href="tel:09074647913"><i class="fa-solid fa-phone"></i> 0907 464 7913</a></p>
+                        <p><a href="https://www.linkedin.com/in/engrtorres2001/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+                        <p><a href="https://github.com/curlyblondehair"><i class="fa-brands fa-github"></i> GitHub</a> </p>
+                    </div>
+                </div>
+        
+           
+                <div class="personal">
+                    <h2>Personal Information</h2>
+                    <p><strong>Age:</strong>            <em>23 years old</em></p>
+                    <p><strong>Gender:</strong>         <em>Male</em></p>
+                    <p><strong>Address:</strong>        <em>Norzagaray, Bulacan</em></p>
+                    <p><strong>Place of Birth:</strong> <em>Norzagaray, Bulacan</em></p>
+                    <p><strong> Date of Birth:</strong> <em>August 22, 2001</em></p>
+                    <p><strong>Civil Status:</strong>   <em>Single</em></p>
+                    <p><strong>Nationality:</strong>    <em>Filipino</em></p>
+                    <p><strong>Religion:</strong>       <em>Roman Catholic</em></p>
+                    <p><strong>Height:</strong>         <em>5'4 ft.</em></p>
+                    <p><strong>Weight:</strong>         <em>52 kg.</em></p>
+                </div>
+               </div>
+            </section>
+           
 
-            <div class="right">
+            <section id="educationInfo">
+                <div class="education">
+                     <h2>Education</h2>
+                     <h3>BS in Computer Engineering</h3>
+                     <p><em>Bulacan State University, 2019-2023</em></p>
+                     <ul>
+                         <li>Graduated as Dean’s Lister Awardee</li>
+                     </ul>
+                     <h3>General Academic Strand (Senior High)</h3>
+                     <p><em>Minuyan National High School, 2017-2019</em></p>
+                     <ul>
+                         <li>With Honor - Grade 11 and 12</li>
+                         <li>Best in Work Immersion - Grade 12</li>
+                         <li>Leadership Awardee</li>
+                     </ul>
+                     <h3>Junior High</h3>
+                     <p><em>Minuyan National High School, 2013-2017</em></p>
+                     <ul>
+                         <li>Consistent Honor - Grade 7 and 10</li>
+                         <li>Leadership Awardee</li>
+                     </ul>
+                 </div>
+            </section>
+
+            <section id="skillsInfo">
+                <div class="skills">
+                        <h2>Skills</h2>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Teamwork</li>
+                        <li>Creativity</li>
+                        <li>Adaptability</li>
+                        <li>Communication</li>
+                        <li>Problem-Solving</li>
+                        <li>Time Management</li>
+                        <li>Willing to learn</li>
+                    </ul>
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Git Version Control(Github)</li>
+                        <li>Git Version Control</li>
+                        <li>Microsoft Office</li>
+                        <li>Tinkercad Practitioner</li>
+                        <li>Canva Designer</li>
+                    </ul>
+                </div>
+            </section>
+
+           <section id="workInfo">
+            <div class="workExperience">
                 <h2>Work Experience</h2>
-                <h3>E-based Internship</h3>
-                <p>CISCO and TESDA, June 2022-August 2022</p>
+            <h3>E-based Internship</h3>
+            <p>CISCO and TESDA, June 2022-August 2022</p>
+            <ul>
+                <li>Identified various types of computer systems, including internal components and external devices.</li>
+                <li>Gained proficiency in managing files and folders, as well as understanding the directory structure in Microsoft Windows using text editors.</li>
+                <li>Developed a solid understanding of computer networks, web browsing, online searching, and email usage.</li>
+                <li>Acquired skills in troubleshooting and resolving common hardware, software, and network issues.</li>
+                <li>Developed proficiency in basic programming languages, including HTML, CSS, and Python.</li>
+            </ul>
+            </div>
+           </section>
+            
+            <section id="seminarInfo">
+                <div class="seminar">
+                    <h2>Seminars and Bootcamps Attended</h2>
+                
+                <h3>Front End Web Development</h3>
+                <p><em>OneCodeCamp, 2025</em></p>
                 <ul>
-                    <li>Identified various types of computer systems, including internal components and external devices.</li>
-                    <li>Gained proficiency in managing files and folders, as well as understanding the directory structure in Microsoft Windows using text editors.</li>
-                    <li>Developed a solid understanding of computer networks, web browsing, online searching, and email usage.</li>
-                    <li>Acquired skills in troubleshooting and resolving common hardware, software, and network issues.</li>
-                    <li>Developed proficiency in basic programming languages, including HTML, CSS, and Python.</li>
+                    <li>Attended a bootcamp focused on mastering the fundamentals of front-end development, including HTML, CSS, and JavaScript</li>
+                    <li>Gained hands-on experience through activities and creating responsive and visually appealing final project.</li>
                 </ul>
-                <h2>Seminars and BootcampsAttended</h2>
+
+                <h3>Web and Mobile Application Design and Trends at Corporate World</h3>
+               <p><em> Bulacan State University, 2022</em></p>
+               <ul>
+                <li>Participated in a seminar that explored the latest trends and best practices in web and mobile design within a corporate environment. </li>
+                <li>Learned about user experience (UX) principles, responsive design, and design tools used in the industry
+                </li>
+               </ul>
+
                 <h3>Effective Internship and Orientation of ICT Proficiency Certification Exam</h3>
-                <p>Department of Information and Communications Technology, 2022</p>
+                <p><em>Department of Information and Cormmunications Technology, 2022</em></p>
                 <ul>
-                    <li>Attended a seminar focused on preparing for ICT proficiency certification exams and enhancing workplace readiness for internships in the ICT field.</li>
-                    <li>Gained insights into the certification process, exam structure, and essential skills for success in ICT roles.</li>
-                </ul>
-                <h3>Web and Mobile Design Guides and Trends at Corporate World</h3>
-                <p>Bulacan State University, 2023</p>
-                <ul>
-                    <li>Participated in a seminar that explored the latest trends and best practices in web and mobile design within a corporate environment.</li>
-                    <li>Learned about user experience (UX) principles, responsive design, and design tools used in the industry.</li>
-                </ul>
-                <h3>FrontEnd Fundamentals Bootcamp</h3>
-                 <p>OneCodeCamp, 2025</p>
-                <ul>
-                    <li>Attended a bootcamp focused on mastering the fundamentals of front-end development, including HTML, CSS, and JavaScript.</li>
-                    <li>Gained hands-on experience in creating responsive and visually appealing activities and final project.</li>
+                    <li>Attended a seminar focused on preparing for ICT proficiency certificationexams and enhancing workplace readiness for internships in the ICT field.</li>
+                    <li>Gained insights into the certification process, exam structure, and essential skills for success in ICT roles.
+                   </li>
                 </ul>
             </div>
+            </section>
+
+            <section id="referenceInfo">
+                <div class="references">
+                    <section class="content">
+                        <h2>References</h2>
+                    <p><strong>ENGR. WENDY OLLERO-SANTOS</strong></p></h3>
+                    <p>Bulacan State University</p>
+                    <p>0976 111 9447</p>
+                    <p>wendy.ollero@bulsu.edu.ph</p>
+    
+                    <p><strong>ENGR. JANUARIUS CRUZ</strong></p>
+                    <p>Bulacan State University</p>
+                    <p>0976 111 9447</p>
+                    <p>januarius.cruz@bulsu.edu.ph</p> 
+                    </section> 
+                </div>
+            </section>
         </div>
-    </div>
 </body>
+<script src="https://kit.fontawesome.com/6c5bcc15dc.js" crossorigin="anonymous"></script>
+<script src="/js/script.js" defer></script>
 </html>
