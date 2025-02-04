@@ -8,12 +8,14 @@ body {
     padding: 0;
     color: #0d3b66;
     background-color: #faf0ca;
+    line-height: 1.6; /* Improved line height for better readability */
 }
 
 .container {
     max-width: 100%;
     height: 100vh;
     margin: 0 auto;
+    
 }
 
 /* Main Navbar Styling */
@@ -23,17 +25,17 @@ body {
     position: fixed;
     width: 100%;
     margin: 0;
-    padding: 10px 20px;
+    padding: 15px 20px; /* Increased padding for better spacing */
     background-color: #003049;
     top: 0;
     justify-content: center;
     align-items: center;
-    font-weight: bolder;
+    font-weight: bold; /* Changed from bolder to bold for a cleaner look */
 }
 
 /* Navbar Items */
 .navBar li {
-    margin: 0 10px;
+    margin: 0 15px; /* Increased margin for better spacing */
     padding: 10px;
     text-align: center;
 }
@@ -43,15 +45,14 @@ body {
     color: #faf0ca;
     text-decoration: none;
     padding: 8px 12px;
+    font-size: 1rem; /* Added font size for consistency */
 }
 
 /* Navbar Hover Effect */
 .navBar a:hover {
     background-color: #fff;
     color: #0d3b66;
-    padding: 8px 12px;
     border-radius: 5px;
-    border: 2px solid #faf0ca;
 }
 
 /* Dark Mode Button Styling */
@@ -63,6 +64,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease;
+    font-size: 1rem; /* Added font size for consistency */
 }
 
 #toggleDarkMode:hover {
@@ -70,12 +72,12 @@ body {
     color: #0d3b66;
 }
 
-.profile {
+#profileInfo {
+    text-align: center;
     background-color: #faf0ca;
     border-radius: 5px;
-    margin-top: 70px;
-    
-    padding: 50px;
+    margin-top: 100px; /* Adjusted margin for better spacing */
+    padding: 0px 50px;
 }
 
 .header img {
@@ -83,68 +85,72 @@ body {
     height: auto;
     border-radius: 50%;
     display: block;
-    margin: auto;
-    width: 50%;
+    margin: 0 auto;
     border: 6px solid #faf0ca;
     outline: 6px solid #0d3b66;
     padding: 1px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px; /* Adjusted margin for better spacing */
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-.header h1, h2, p {
-    margin-top: 10px;
+.header h1, .header h2, .header p {
     text-align: center;
-    line-height: 25px;
-    letter-spacing: 1.2px;
+    line-height: 1.5; /* Improved line height for better readability */
+    letter-spacing: 1px; /* Slightly reduced letter spacing */
+    margin: 10px 0; /* Added margin for better spacing */
 }
 
 .header h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Slightly reduced font size for a cleaner look */
     margin-top: 20px;
+}
+
+.header h2 {
+    margin-top: 10px;
 }
 
 .header p {
     font-size: 1rem;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
-.summary h2, .contact h2, .personal h2 {
-    font-size: 1.5rem;
-    margin-top: 50px;
+.summary h2, 
+.contact h2, 
+.personal h2, 
+.education h2, 
+.skills h2, 
+.workExperience h2 {
+    font-size: 1.5rem; /* Slightly reduced font size for a cleaner look */
     border: 2px solid #0d3b66;
     color: #faf0ca;
     background-color: #0d3b66;
-    padding: 7px;
+    padding: 10px; /* Increased padding for better spacing */
     width: 100%;
+    text-transform: uppercase;
 }
 
 .contact {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px; /* Adjusted margin for better spacing */
 }
 
 .contact h2 {
-    font-size: 24px;
     color: #faf0ca;
-    margin-bottom: 15px;
 }
 
 .contactLinks {
-    display: flex; /* Makes items align in a row */
-    justify-content: center; /* Centers the content */
-    gap: 20px; /* Adds space between items */
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     padding: 10px 0;
 }
 
-/* ✅ Individual Links */
 .contactLinks p {
     margin: 0;
 }
 
-/* ✅ Styling for Links */
 .contactLinks a {
     text-decoration: none;
     color: #0d3b66;
@@ -152,7 +158,8 @@ body {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between icon and text */
+    gap: 10px;
+    font-size: 1rem; /* Added font size for consistency */
 }
 
 .contactLinks a:hover {
@@ -163,37 +170,81 @@ body {
 }
 
 .personal {
-    font-family: Arial, sans-serif;
-    text-align: center; /* Centers the entire content */
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Ensures centering */
-    padding-top: -30px; /* Adjust spacing */
+    align-items: center;
 }
 
-/* ✅ Personal Info Paragraphs */
 .personal p {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 400px;
-    font-size: 16px;
+    margin: 5px 0; /* Added margin for better spacing */
 }
 
-/* ✅ Strong (Labels) */
 .personal strong {
     color: #0d3b66;
     font-weight: bold;
 }
 
-/* ✅ Italicized Values */
 .personal em {
     font-style: italic;
     color: #0d3b66;
 }
 
+#educationInfo, #skillsInfo, #seminar, #workExperience, #references {
+    padding: 0px 50px;
+}
+
+.education {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.tertiary {
+    flex: 30%;
+    line-height:16px;
+}
+
+.senior-high {
+    flex: 30%;
+    line-height:16px;
+}
+
+.junior-high {
+    flex: 30%;
+    line-height:16px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-style: normal;
+}
+
+.skills ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.skills li, h3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin: 5px 50px; /* Added margin for better spacing */
+}
+
+
 /* Responsive: Stacks items for small screens */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .navBar {
         flex-direction: column;
         align-items: center;
@@ -209,21 +260,39 @@ body {
         display: block;
         width: 100%;
         text-align: center;
+        font-size: 14px;
     }
 
     .contactLinks {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        font-size: 14px;
     }
 
     .contact h2 {
-        font-size: 20px;
+        font-size: 1.4rem; /* Adjusted font size for smaller screens */
+    }
+
+    .tertiary, .senior-high, .junior-high {
+        flex: 100%;
+        font-size: 14px;
+    }
+
+    .summary h2, .contact h2, .personal h2, .education h2, .skills h2 {
+        font-size:1.8rem ;
     }
 }
 
-/* Responsive: Stacks items for small screens */
 @media (max-width: 480px) {
+
+    .navBar a{
+        font-size: 12px;
+    }
+
+    .contactLinks {
+        font-size: 12px;
+    }
     .personal {
         max-width: 100%;
         padding: 15px;
@@ -232,5 +301,12 @@ body {
     .personal p {
         flex-direction: column;
         text-align: left;
+        font-size: 12px;
+    }
+
+    .tertiary, .senior-high, .junior-high {
+        flex: 100%; /* Ensure they stack vertically */
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin-bottom: 10px; /* Add margin for spacing */
     }
 }
